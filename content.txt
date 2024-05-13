@@ -97,3 +97,177 @@
     Email: jasper.vanderberg@example.com
     Country: Netherlands
     Phone: +31 123 456 789
+
+
+
+
+
+
+
+          <section id="users">
+      
+        <div class="usertable">
+          <div class="table__header">
+            <h1>USERS</h1>
+            <div class="input-group">
+              <input type="search" placeholder="Search Data...">
+              <img src="images/search.png" alt="">
+            </div>
+
+          </div>
+          <div class="table__body">
+            <table>
+              <thead>
+                <tr>
+                  <th>User Id </th>
+                  <th> User </th>
+                  <th> Email </th>
+                  <th> Phone </th>
+                  <th> Status </th>
+                  <th> Wallete balance </th>
+                  <th> Date </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                  <td>  10-25-2004 </td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                  <td>  10-25-2004 </td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                  <td>  10-25-2004 </td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                  <td>  10-25-2004 </td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                  <td>  10-25-2004 </td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                  <td>  10-25-2004 </td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                  <td>  10-25-2004 </td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
+                  <td> alice.johnson1234@example.com </td>
+                  <td> +1 (555) 123-4567</td>
+                  <td>
+                    Canada
+                  </td>
+                  <td> <strong> $128.90 </strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>

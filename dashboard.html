@@ -27,14 +27,11 @@
     <header class="header">
       <div class="menu-icon" onclick="openSidebar()">
         <span class="material-icons-outlined">menu</span>
-
       </div>
       <div class="left">
         <span class="material-icons-outlined">search</span>
       </div>
       <div class="header-right">
-        <!-- <span class="material-icons-outlined">notifications</span>
-          <span class="material-icons-outlined">email</span> -->
         <span class="material-icons-outlined">account_circle</span>
       </div>
     </header>
@@ -44,9 +41,7 @@
     <aside id="sidebar">
       <div class="sidebar-title">
         <div class="sidebar-brand">
-
-          <span class="material-icons-outlined">
-            shield</span> ADMIN
+          <span class="material-icons-outlined">shield</span> ENZO
         </div>
         <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
       </div>
@@ -66,31 +61,16 @@
             <span class="material-icons-outlined">group</span> Users
           </a>
         </li>
-        <!-- <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">category</span> Categories
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">groups</span> Customers
-            </a>
-          </li> -->
-        <!-- <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">fact_check</span> Inventory
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">poll</span> Reports
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">settings</span> Settings
-            </a>
-          </li> -->
+        <li class="sidebar-list-item">
+          <a href="#transactions">
+            <span class="material-icons-outlined">paid</span> Transactions
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#widthdrawal">
+            <span class="material-icons-outlined">redeem</span> Widthdrawal
+          </a>
+        </li>
       </ul>
     </aside>
     <!-- End Sidebar -->
@@ -151,177 +131,304 @@
 
       </div>
 
-
-      <section id="users">
-        <div class="main-title">
-          <h2>Users</h2>
+      <!-- User Table -->
+      <section class="table" id="users">
+        <div class="table__header">
+          <h1>Users</h1>
+          <div class="input-group">
+            <input type="search" placeholder="Search">
+            <img src="images/search.png" alt="">
+          </div>
         </div>
-        <div class="usertable">
-          <div class="table__header">
-            <h1>Customer's Orders</h1>
-            <div class="input-group">
-                <input type="search" placeholder="Search Data...">
-                <img src="images/search.png" alt="">
-            </div>
-           
-          </div>
         <div class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th class=""> Id <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Email <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Phone <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Status <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> 1 </td>
-                        <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Alice Johnson</td>
-                        <td>  alice.johnson1234@example.com </td>
-                        <td> +1 (555) 123-4567</td>
-                        <td>
-                           Canada
-                        </td>
-                        <td> <strong> $128.90 </strong></td>
-                    </tr>
-                    <tr>
-                        <td> 2 </td>
-                        <td><img src="images/Jeet Saru.png" alt=""> John Smith</td>
-                        <td> john.smith5678@example.com </td>
-                        <td> 27 Aug, 2023 </td>
-                        <td>
-                            <p class="status cancelled">Cancelled</p>
-                        </td>
-                        <td> <strong>$5350.50</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 3</td>
-                        <td><img src="images/Sonal Gharti.jpg" alt=""> Sonal Gharti </td>
-                        <td> Tokyo </td>
-                        <td> 14 Mar, 2023 </td>
-                        <td>
-                            <p class="status shipped">Shipped</p>
-                        </td>
-                        <td> <strong>$210.40</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 4</td>
-                        <td><img src="images/Alson GC.jpg" alt=""> Alson GC </td>
-                        <td> New Delhi </td>
-                        <td> 25 May, 2023 </td>
-                        <td>
-                            <p class="status delivered">Delivered</p>
-                        </td>
-                        <td> <strong>$149.70</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 5</td>
-                        <td><img src="images/Sarita Limbu.jpg" alt=""> Sarita Limbu </td>
-                        <td> Paris </td>
-                        <td> 23 Apr, 2023 </td>
-                        <td>
-                            <p class="status pending">Pending</p>
-                        </td>
-                        <td> <strong>$399.99</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 6</td>
-                        <td><img src="images/Alex Gonley.jpg" alt=""> Alex Gonley </td>
-                        <td> London </td>
-                        <td> 23 Apr, 2023 </td>
-                        <td>
-                            <p class="status cancelled">Cancelled</p>
-                        </td>
-                        <td> <strong>$399.99</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 7</td>
-                        <td><img src="images/Alson GC.jpg" alt=""> Jeet Saru </td>
-                        <td> New York </td>
-                        <td> 20 May, 2023 </td>
-                        <td>
-                            <p class="status delivered">Delivered</p>
-                        </td>
-                        <td> <strong>$399.99</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 8</td>
-                        <td><img src="images/Sarita Limbu.jpg" alt=""> Aayat Ali Khan </td>
-                        <td> Islamabad </td>
-                        <td> 30 Feb, 2023 </td>
-                        <td>
-                            <p class="status pending">Pending</p>
-                        </td>
-                        <td> <strong>$149.70</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 9</td>
-                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
-                        <td> Dhaka </td>
-                        <td> 22 Dec, 2023 </td>
-                        <td>
-                            <p class="status cancelled">Cancelled</p>
-                        </td>
-                        <td> <strong>$249.99</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 9</td>
-                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
-                        <td> Dhaka </td>
-                        <td> 22 Dec, 2023 </td>
-                        <td>
-                            <p class="status cancelled">Cancelled</p>
-                        </td>
-                        <td> <strong>$249.99</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 9</td>
-                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
-                        <td> Dhaka </td>
-                        <td> 22 Dec, 2023 </td>
-                        <td>
-                            <p class="status cancelled">Cancelled</p>
-                        </td>
-                        <td> <strong>$249.99</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 9</td>
-                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
-                        <td> Dhaka </td>
-                        <td> 22 Dec, 2023 </td>
-                        <td>
-                            <p class="status cancelled">Cancelled</p>
-                        </td>
-                        <td> <strong>$249.99</strong> </td>
-                    </tr>
-                    <tr>
-                        <td> 9</td>
-                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
-                        <td> Dhaka </td>
-                        <td> 22 Dec, 2023 </td>
-                        <td>
-                            <p class="status cancelled">Cancelled</p>
-                        </td>
-                        <td> <strong>$249.99</strong> </td>
-                    </tr>
-                </tbody>
-            </table>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Id<span class="icon-arrow">&UpArrow;</span></th>
+                <th>User<span class="icon-arrow">&UpArrow;</span></th>
+                <th>Email <span class="icon-arrow">&UpArrow;</span></th>
+                <th>Date<span class="icon-arrow">&UpArrow;</span></th>
+                <th>Status <span class="icon-arrow">&UpArrow;</span></th>
+                <th>Type<span class="icon-arrow">&UpArrow;</span></th>
+                <th>Amount<span class="icon-arrow">&UpArrow;</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table rows here -->
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>maria.garcia@example.com </td>
+                <td> 17 Dec, 2022 </td>
+                <td>
+                  <p class="status delivered">Delivered</p>
+                </td>
+                <td> type </td>
+                <td> <strong> $128.90 </strong></td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </section>
+      <!-- End User Table -->
+
+
+      <!-- Transaction table-->
+      <section class="table" id="users">
+        <div class="table__header">
+          <h1>Transactions</h1>
+
+        </div>
+        <div class="table__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Transaction Id</th>
+                <th>User</th>
+                <th>Buy</th>
+                <th>Date</th>
+                <th>Sell</th>
+                <th>Date</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table rows here -->
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+              <tr>
+                <td> 2 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+              <tr>
+                <td> 3 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+              <tr>
+                <td> 4 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+              <tr>
+                <td> 5 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+              <tr>
+                <td> 6 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+              <tr>
+                <td> 7 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+              <tr>
+                <td> 8 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td> 17-12-2022</td>
+                <td>
+                  $600
+                </td>
+                <td> 15-1-2023 </td>
+                <td> <strong>$100</strong></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- end transaction table-->
+
+
+      <!-- withdrawal table-->
+      <section class="table" id="users">
+        <div class="table__header">
+          <h1>Transactions</h1>
+
+        </div>
+        <div class="table__body">
+          <table>
+            <thead class="transaction">
+              <tr>
+                <th>Transaction Id</th>
+                <th>User</th>
+                <th> Withdrawal Amount</th>
+                <!-- <th>Grant </th>
+                <th> Reject </th> -->
+                
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table rows here -->
+              <tr>
+                <td> 1 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td>  <button class="permission grant">Grant</button></td>
+                <td> <button class=" permission reject">Reject</button> <td>   
+                
+              </tr>
+              <tr>
+                <td> 2 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td>  <button class="permission grant">Grant</button></td>
+                <td> <button class=" permission reject">Reject</button> <td>   
+                
+              </tr>
+              <tr>
+                <td> 3 </td>
+                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                <td>$500</td>
+                <td>  <button class="permission grant">Grant</button></td>
+                <td> <button class=" permission reject">Reject</button> <td>                            
+              </tr>
+              
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- end withdrawal table-->
     </main>
+    <!-- End Main -->
+
   </div>
 
-
   <!-- Scripts -->
+  <script src="./js/scriptuser.js"></script>
   <!-- ApexCharts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
   <!-- Custom JS -->
-  <script src="/"></script>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
