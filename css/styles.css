@@ -289,7 +289,7 @@ table, th, td {
 }
 
 thead th {
-  position: sticky;
+  /* position: sticky; */
   /* width: 100%; */
   top: 0;
   left: 0;
@@ -434,6 +434,12 @@ thead th.active,tbody td.active {
 
 /* Medium <= 992px */
 
+/* Original CSS goes here */
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Medium <= 992px */
+
 @media screen and (max-width: 992px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -474,11 +480,10 @@ thead th.active,tbody td.active {
 /* Extra Small <= 576px */
 
 @media screen and (max-width: 576px) {
-  .hedaer-left {
+  .hedaer-left { /* Typo? Should be .header-left */
     display: none;
   }
 }
-
 
 /* Media Queries for iPhones */
 @media only screen 
@@ -527,6 +532,13 @@ thead th.active,tbody td.active {
   position: sticky;
   box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
 }
+}
+
+/* Responsive Styles for Tables */
+@media screen and (max-width: 1000px) {
+  td:not(:first-of-type) {
+      min-width: 12.1rem;
+  }
 }
 
 

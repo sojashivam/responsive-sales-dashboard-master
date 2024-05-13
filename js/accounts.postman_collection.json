@@ -1,0 +1,930 @@
+{
+	"info": {
+		"_postman_id": "d5126aed-b9a2-48ca-a6fa-26a995fdc29e",
+		"name": "accounts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23909615"
+	},
+	"item": [
+		{
+			"name": "portal",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "get_user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "0",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzMGNhMjcyZjYwYTk2NmZlZDJmYzdkIiwiaWF0IjoxNzE1NTk4NTQwLCJleHAiOjE3MTkxOTg1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.U3QmsXSRVUuAa7qdoZ8kVn6fpj7W6vhinUuhPr1t7uJhvyoyqPBz48EJa8exhLIrYlAwTCt048MnTQyLWfJobEkWm_sfsNesKgVZG-4OSaTW2edQnwkO2uzXylKfRUvw-HbA1vY6hkJGp24xV8VKkIzDJ6cX5aTc217wjlLshd8yyxp7aeB3QCI7OLTAUYPb4XX96suYHtb3OMBJLMjd4tykeE-_m74Zu0-er6Oifi1UrXpQ3_rXN8RHhjE7MSIEnaNX_cBBh-I_tUV8nC3d5KaznwKJg7fCujY9k0pkhiNP_-XQVLeiNrYIkvL9GmE0XY2kIKEF7IIe2AKbhE3T8g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"664211b1c54276b67ac85ea0\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/portal/auth/user/get",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"portal",
+										"auth",
+										"user",
+										"get"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disable_user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "text/plain",
+										"name": "content-type",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "<calculated when request is sent>",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzMGNhMjcyZjYwYTk2NmZlZDJmYzdkIiwiaWF0IjoxNzE1NTk4NTQwLCJleHAiOjE3MTkxOTg1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.U3QmsXSRVUuAa7qdoZ8kVn6fpj7W6vhinUuhPr1t7uJhvyoyqPBz48EJa8exhLIrYlAwTCt048MnTQyLWfJobEkWm_sfsNesKgVZG-4OSaTW2edQnwkO2uzXylKfRUvw-HbA1vY6hkJGp24xV8VKkIzDJ6cX5aTc217wjlLshd8yyxp7aeB3QCI7OLTAUYPb4XX96suYHtb3OMBJLMjd4tykeE-_m74Zu0-er6Oifi1UrXpQ3_rXN8RHhjE7MSIEnaNX_cBBh-I_tUV8nC3d5KaznwKJg7fCujY9k0pkhiNP_-XQVLeiNrYIkvL9GmE0XY2kIKEF7IIe2AKbhE3T8g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"664211b1c54276b67ac85ea0\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/portal/auth/user/disable",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"portal",
+										"auth",
+										"user",
+										"disable"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "enable_user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "text/plain",
+										"name": "content-type",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "<calculated when request is sent>",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzMGNhMjcyZjYwYTk2NmZlZDJmYzdkIiwiaWF0IjoxNzE1NTk4NTQwLCJleHAiOjE3MTkxOTg1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.U3QmsXSRVUuAa7qdoZ8kVn6fpj7W6vhinUuhPr1t7uJhvyoyqPBz48EJa8exhLIrYlAwTCt048MnTQyLWfJobEkWm_sfsNesKgVZG-4OSaTW2edQnwkO2uzXylKfRUvw-HbA1vY6hkJGp24xV8VKkIzDJ6cX5aTc217wjlLshd8yyxp7aeB3QCI7OLTAUYPb4XX96suYHtb3OMBJLMjd4tykeE-_m74Zu0-er6Oifi1UrXpQ3_rXN8RHhjE7MSIEnaNX_cBBh-I_tUV8nC3d5KaznwKJg7fCujY9k0pkhiNP_-XQVLeiNrYIkvL9GmE0XY2kIKEF7IIe2AKbhE3T8g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"664211b1c54276b67ac85ea0\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/portal/auth/user/enable",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"portal",
+										"auth",
+										"user",
+										"enable"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete_user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "text/plain",
+										"name": "content-type",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "<calculated when request is sent>",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzMGNhMjcyZjYwYTk2NmZlZDJmYzdkIiwiaWF0IjoxNzE1NTk4NTQwLCJleHAiOjE3MTkxOTg1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.U3QmsXSRVUuAa7qdoZ8kVn6fpj7W6vhinUuhPr1t7uJhvyoyqPBz48EJa8exhLIrYlAwTCt048MnTQyLWfJobEkWm_sfsNesKgVZG-4OSaTW2edQnwkO2uzXylKfRUvw-HbA1vY6hkJGp24xV8VKkIzDJ6cX5aTc217wjlLshd8yyxp7aeB3QCI7OLTAUYPb4XX96suYHtb3OMBJLMjd4tykeE-_m74Zu0-er6Oifi1UrXpQ3_rXN8RHhjE7MSIEnaNX_cBBh-I_tUV8nC3d5KaznwKJg7fCujY9k0pkhiNP_-XQVLeiNrYIkvL9GmE0XY2kIKEF7IIe2AKbhE3T8g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"664211b1c54276b67ac85ea0\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/portal/auth/user/delete",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"portal",
+										"auth",
+										"user",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get_user_list",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzMGNhMjcyZjYwYTk2NmZlZDJmYzdkIiwiaWF0IjoxNzE1NTk4NTQwLCJleHAiOjE3MTkxOTg1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.U3QmsXSRVUuAa7qdoZ8kVn6fpj7W6vhinUuhPr1t7uJhvyoyqPBz48EJa8exhLIrYlAwTCt048MnTQyLWfJobEkWm_sfsNesKgVZG-4OSaTW2edQnwkO2uzXylKfRUvw-HbA1vY6hkJGp24xV8VKkIzDJ6cX5aTc217wjlLshd8yyxp7aeB3QCI7OLTAUYPb4XX96suYHtb3OMBJLMjd4tykeE-_m74Zu0-er6Oifi1UrXpQ3_rXN8RHhjE7MSIEnaNX_cBBh-I_tUV8nC3d5KaznwKJg7fCujY9k0pkhiNP_-XQVLeiNrYIkvL9GmE0XY2kIKEF7IIe2AKbhE3T8g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/portal/auth/user/list",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"portal",
+										"auth",
+										"user",
+										"list"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "transaction",
+					"item": [
+						{
+							"name": "transaction_list",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzMGNhMjcyZjYwYTk2NmZlZDJmYzdkIiwiaWF0IjoxNzE1NTk4NTQwLCJleHAiOjE3MTkxOTg1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.U3QmsXSRVUuAa7qdoZ8kVn6fpj7W6vhinUuhPr1t7uJhvyoyqPBz48EJa8exhLIrYlAwTCt048MnTQyLWfJobEkWm_sfsNesKgVZG-4OSaTW2edQnwkO2uzXylKfRUvw-HbA1vY6hkJGp24xV8VKkIzDJ6cX5aTc217wjlLshd8yyxp7aeB3QCI7OLTAUYPb4XX96suYHtb3OMBJLMjd4tykeE-_m74Zu0-er6Oifi1UrXpQ3_rXN8RHhjE7MSIEnaNX_cBBh-I_tUV8nC3d5KaznwKJg7fCujY9k0pkhiNP_-XQVLeiNrYIkvL9GmE0XY2kIKEF7IIe2AKbhE3T8g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/portal/auth/transactions?pageNo=1&status=PENDING",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"portal",
+										"auth",
+										"transactions"
+									],
+									"query": [
+										{
+											"key": "pageNo",
+											"value": "1"
+										},
+										{
+											"key": "status",
+											"value": "PENDING"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",             \r\n    \"first_name\": \"Admin\",\r\n    \"last_name\": \"\",\r\n    \"password\": \"Admin\",\r\n    \"type\":\"ROOT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/portal/no-auth/signup",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"portal",
+								"no-auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",             \r\n    \"password\": \"Admin\",\r\n    \"type\":\"ROOT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/portal/no-auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"portal",
+								"no-auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "app",
+			"item": [
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"phone\":\"+919876543210\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/no-auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"no-auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "wallet",
+					"item": [
+						{
+							"name": "deposit",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY0NmJmYjM1MTY2N2VlYzMwMTQ5IiwiaWF0IjoxNzE1Mjk5NDM1LCJleHAiOjE3MTg4OTk0MzUsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.AlqtQxZK-82w3fjVZNxpzo-Zyt-j_jdXZ4268Wb_RLLIbJnj3ns2bIXzEK4_z2OQLRtysQDz3J8DpEJBipER_GPNUNdqYQIOh856nABoUtxFqwIiwPd53WHUsTxUwjEHoj6yTNIbbZ3sAHZPhCvXPa-cYBys2bwDRsAm7q6RR2QXu0_9782h7tj01yTIvPYd5nJ7RT0jletXaLtWVnRBbrGN_Dfda7Zggr1zwS1p4mikBMZi6M1I2m_WM6teCHURWxTFwbBPj-5Utlren-ReMqtiQPw7g4jkB_m3MLvciJDNp8ILzNmcM5QXG5iYqEq3QYfIJkSN5Aynpqjbwob-mA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY0NmJmYjM1MTY2N2VlYzMwMTQ5IiwiaWF0IjoxNzE1Mjk5NDM1LCJleHAiOjE3MTg4OTk0MzUsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.AlqtQxZK-82w3fjVZNxpzo-Zyt-j_jdXZ4268Wb_RLLIbJnj3ns2bIXzEK4_z2OQLRtysQDz3J8DpEJBipER_GPNUNdqYQIOh856nABoUtxFqwIiwPd53WHUsTxUwjEHoj6yTNIbbZ3sAHZPhCvXPa-cYBys2bwDRsAm7q6RR2QXu0_9782h7tj01yTIvPYd5nJ7RT0jletXaLtWVnRBbrGN_Dfda7Zggr1zwS1p4mikBMZi6M1I2m_WM6teCHURWxTFwbBPj-5Utlren-ReMqtiQPw7g4jkB_m3MLvciJDNp8ILzNmcM5QXG5iYqEq3QYfIJkSN5Aynpqjbwob-mA",
+										"name": "authorization",
+										"type": "text"
+									},
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "0",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY0NmJmYjM1MTY2N2VlYzMwMTQ5IiwiaWF0IjoxNzE1Mjk5NDM1LCJleHAiOjE3MTg4OTk0MzUsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.AlqtQxZK-82w3fjVZNxpzo-Zyt-j_jdXZ4268Wb_RLLIbJnj3ns2bIXzEK4_z2OQLRtysQDz3J8DpEJBipER_GPNUNdqYQIOh856nABoUtxFqwIiwPd53WHUsTxUwjEHoj6yTNIbbZ3sAHZPhCvXPa-cYBys2bwDRsAm7q6RR2QXu0_9782h7tj01yTIvPYd5nJ7RT0jletXaLtWVnRBbrGN_Dfda7Zggr1zwS1p4mikBMZi6M1I2m_WM6teCHURWxTFwbBPj-5Utlren-ReMqtiQPw7g4jkB_m3MLvciJDNp8ILzNmcM5QXG5iYqEq3QYfIJkSN5Aynpqjbwob-mA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"663d646bfb351667eec30149\",\"amount\":500}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/auth/deposit",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"auth",
+										"deposit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add-bonus",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY0NmJmYjM1MTY2N2VlYzMwMTQ5IiwiaWF0IjoxNzE1Mjk5NDM1LCJleHAiOjE3MTg4OTk0MzUsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.AlqtQxZK-82w3fjVZNxpzo-Zyt-j_jdXZ4268Wb_RLLIbJnj3ns2bIXzEK4_z2OQLRtysQDz3J8DpEJBipER_GPNUNdqYQIOh856nABoUtxFqwIiwPd53WHUsTxUwjEHoj6yTNIbbZ3sAHZPhCvXPa-cYBys2bwDRsAm7q6RR2QXu0_9782h7tj01yTIvPYd5nJ7RT0jletXaLtWVnRBbrGN_Dfda7Zggr1zwS1p4mikBMZi6M1I2m_WM6teCHURWxTFwbBPj-5Utlren-ReMqtiQPw7g4jkB_m3MLvciJDNp8ILzNmcM5QXG5iYqEq3QYfIJkSN5Aynpqjbwob-mA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY0NmJmYjM1MTY2N2VlYzMwMTQ5IiwiaWF0IjoxNzE1Mjk5NDM1LCJleHAiOjE3MTg4OTk0MzUsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.AlqtQxZK-82w3fjVZNxpzo-Zyt-j_jdXZ4268Wb_RLLIbJnj3ns2bIXzEK4_z2OQLRtysQDz3J8DpEJBipER_GPNUNdqYQIOh856nABoUtxFqwIiwPd53WHUsTxUwjEHoj6yTNIbbZ3sAHZPhCvXPa-cYBys2bwDRsAm7q6RR2QXu0_9782h7tj01yTIvPYd5nJ7RT0jletXaLtWVnRBbrGN_Dfda7Zggr1zwS1p4mikBMZi6M1I2m_WM6teCHURWxTFwbBPj-5Utlren-ReMqtiQPw7g4jkB_m3MLvciJDNp8ILzNmcM5QXG5iYqEq3QYfIJkSN5Aynpqjbwob-mA",
+										"name": "authorization",
+										"type": "text"
+									},
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "0",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY4YmM0YzM0NTEyOWU1N2M0MzM2IiwiaWF0IjoxNzE1MzAwNTQwLCJleHAiOjE3MTg5MDA1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.G9nZ2h2usra-tbvte2zdR7eCv2l0YsRF3FUvGhLsiXRiZLGt4M6LZpsIqAwFwdnBE--bjJLbtOh__R6ujyrWXTZOjMlewXPauwQooCfVqcjYq9WkaV7DpTmcyCWBnoJ8oVPHQmwc5HlTvOn33y1q9pQZn-GCVktn2yo7z_eeY3xBWQeOnagZmY0J7PWIBQscnQXOBOLaxpDl6rrTDf9Oi86F9ZwHJSuvRoa9vXLic-UqyEkozxUVVB95Z3O4HgY65SeGokC0VI6yh09CuO7H08A_mYq5-FC55tEEnNA28DeLDeGPNPqCqDPiG4Vh2Ws3L4q-rAXbh33bk2l5hu3Svw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"663d68bc4c345129e57c4336\",\"amount\":500}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/auth/add-bonus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"auth",
+										"add-bonus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "withdrawal",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY0NmJmYjM1MTY2N2VlYzMwMTQ5IiwiaWF0IjoxNzE1Mjk5NDM1LCJleHAiOjE3MTg4OTk0MzUsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.AlqtQxZK-82w3fjVZNxpzo-Zyt-j_jdXZ4268Wb_RLLIbJnj3ns2bIXzEK4_z2OQLRtysQDz3J8DpEJBipER_GPNUNdqYQIOh856nABoUtxFqwIiwPd53WHUsTxUwjEHoj6yTNIbbZ3sAHZPhCvXPa-cYBys2bwDRsAm7q6RR2QXu0_9782h7tj01yTIvPYd5nJ7RT0jletXaLtWVnRBbrGN_Dfda7Zggr1zwS1p4mikBMZi6M1I2m_WM6teCHURWxTFwbBPj-5Utlren-ReMqtiQPw7g4jkB_m3MLvciJDNp8ILzNmcM5QXG5iYqEq3QYfIJkSN5Aynpqjbwob-mA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY0NmJmYjM1MTY2N2VlYzMwMTQ5IiwiaWF0IjoxNzE1Mjk5NDM1LCJleHAiOjE3MTg4OTk0MzUsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.AlqtQxZK-82w3fjVZNxpzo-Zyt-j_jdXZ4268Wb_RLLIbJnj3ns2bIXzEK4_z2OQLRtysQDz3J8DpEJBipER_GPNUNdqYQIOh856nABoUtxFqwIiwPd53WHUsTxUwjEHoj6yTNIbbZ3sAHZPhCvXPa-cYBys2bwDRsAm7q6RR2QXu0_9782h7tj01yTIvPYd5nJ7RT0jletXaLtWVnRBbrGN_Dfda7Zggr1zwS1p4mikBMZi6M1I2m_WM6teCHURWxTFwbBPj-5Utlren-ReMqtiQPw7g4jkB_m3MLvciJDNp8ILzNmcM5QXG5iYqEq3QYfIJkSN5Aynpqjbwob-mA",
+										"name": "authorization",
+										"type": "text"
+									},
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"name": "content-type",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "<calculated when request is sent>",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzZDY4YmM0YzM0NTEyOWU1N2M0MzM2IiwiaWF0IjoxNzE1MzAwNTQwLCJleHAiOjE3MTg5MDA1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.G9nZ2h2usra-tbvte2zdR7eCv2l0YsRF3FUvGhLsiXRiZLGt4M6LZpsIqAwFwdnBE--bjJLbtOh__R6ujyrWXTZOjMlewXPauwQooCfVqcjYq9WkaV7DpTmcyCWBnoJ8oVPHQmwc5HlTvOn33y1q9pQZn-GCVktn2yo7z_eeY3xBWQeOnagZmY0J7PWIBQscnQXOBOLaxpDl6rrTDf9Oi86F9ZwHJSuvRoa9vXLic-UqyEkozxUVVB95Z3O4HgY65SeGokC0VI6yh09CuO7H08A_mYq5-FC55tEEnNA28DeLDeGPNPqCqDPiG4Vh2Ws3L4q-rAXbh33bk2l5hu3Svw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"663d68bc4c345129e57c4336\",\"amount\":500}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/auth/withdrawals",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"auth",
+										"withdrawals"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
