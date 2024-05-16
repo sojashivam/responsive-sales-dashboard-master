@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  fetch('http://52.198.61.81:3001/portal/auth/user/list', {
+  fetch('https://52.198.61.81:3001/portal/auth/user/list', {
   headers: {
         'token':'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjYzMGNhMjcyZjYwYTk2NmZlZDJmYzdkIiwiaWF0IjoxNzE1NTk4NTQwLCJleHAiOjE3MTkxOTg1NDAsImF1ZCI6Imh0dHA6Ly9teXNvZnRjb3JwLmluIiwiaXNzIjoiTXlzb2Z0IGNvcnAiLCJzdWIiOiJzb21lQHVzZXIuY29tIn0.U3QmsXSRVUuAa7qdoZ8kVn6fpj7W6vhinUuhPr1t7uJhvyoyqPBz48EJa8exhLIrYlAwTCt048MnTQyLWfJobEkWm_sfsNesKgVZG-4OSaTW2edQnwkO2uzXylKfRUvw-HbA1vY6hkJGp24xV8VKkIzDJ6cX5aTc217wjlLshd8yyxp7aeB3QCI7OLTAUYPb4XX96suYHtb3OMBJLMjd4tykeE-_m74Zu0-er6Oifi1UrXpQ3_rXN8RHhjE7MSIEnaNX_cBBh-I_tUV8nC3d5KaznwKJg7fCujY9k0pkhiNP_-XQVLeiNrYIkvL9GmE0XY2kIKEF7IIe2AKbhE3T8g'
   }
@@ -310,7 +310,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   
   const username = document.querySelector('input[name="username"]').value;
   const password = document.getElementById('password').value;
-  fetch('http://52.198.61.81:3001/portal/no-auth/login', {
+  fetch('https://52.198.61.81:3001/portal/no-auth/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   
-  fetch('http://52.198.61.81:3001/portal/auth/user/list', {
+  fetch('https://52.198.61.81:3001/portal/auth/user/list', {
     headers: {
       'Authorization': `Bearer ${token}` 
     }
