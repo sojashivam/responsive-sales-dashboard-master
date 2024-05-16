@@ -12,6 +12,7 @@ body {
   vertical-align: middle;
   line-height: 1px;
   font-size: 35px;
+  cursor: pointer;
 }
 
 
@@ -429,16 +430,6 @@ thead th.active,tbody td.active {
 
 
 
-
-/* ---------- MEDIA QUERIES ---------- */
-
-/* Medium <= 992px */
-
-/* Original CSS goes here */
-
-/* ---------- MEDIA QUERIES ---------- */
-
-/* Medium <= 992px */
 
 @media screen and (max-width: 992px) {
   .grid-container {

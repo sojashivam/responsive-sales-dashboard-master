@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title> Admin Login  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <label>Username</label>
       </div>
       <div class="txt_field">
-        <input type="password" name="password" required>
+        <input type="password" id="password" name="password" required>
         <span></span>
         <label>Password</label>
       </div>
@@ -25,22 +26,75 @@
         Not a member? <a href="signup.html">Signup</a>
       </div>
     </form>
+    <p id="error-message"></p>
   </div>
-  <script>
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-      var username = document.getElementsByName("username")[0].value;
-      var password = document.getElementsByName("password")[0].value;
 
-      // Dummy admin login logic (replace with your actual admin credentials)
-      if (username === "Admin" && password === "admin1234") {
-        alert("Admin login successful!");
-        window.location.href = "dashboard.html";
-        // Redirect to admin dashboard or perform other admin actions
-      } else {
-        alert("Invalid username or password.");
-      }
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <p>Login Successful!</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const username = document.querySelector('input[name="username"]').value;
+      const password = document.getElementById('password').value;
+      
+      
+      fetch('http://52.198.61.81:3001/portal/no-auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: username,
+          password: password
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+      
+        if (data.token) {
+        
+        localStorage.setItem('token', data.token);
+          
+          
+          showPopup();
+    
+          
+          setTimeout(hidePopup, 1000);
+    
+        
+          setTimeout(function() {
+            window.location.href = 'dashboard.html';
+          }, 1000);
+        } else {
+          
+          document.getElementById('error-message').innerText = 'Invalid username or password';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('error-message').innerText = 'An error occurred. Please try again later.';
+      });
     });
-  </script>
+    
+    
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.classList.add('fade-in');
+      popup.style.display = 'block';
+    }
+    
+    
+    function hidePopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+    </script>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>

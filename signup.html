@@ -1,30 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title> Admin Sign up  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Sign Up</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="center">
-    <h1> Admin Sign up</h1>
-    <form method="post" id="loginForm">
+    <h1>Admin Sign Up</h1>
+    <form method="post" id="signupForm">
       <div class="txt_field">
-        <input type="text" name="username" required>
+        <input type="email" name="email" required>
         <span></span>
-        <label>Username</label>
+        <label>Email</label>
       </div>
       <div class="txt_field">
-        <input type="password" name="password" required>
+        <input type="text" name="first_name" required>
+        <span></span>
+        <label>First Name</label>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="last_name">
+        <span></span>
+        <label>Last Name</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" id="password" name="password" required>
         <span></span>
         <label>Password</label>
       </div>
+      <input type="hidden" name="type" value="ROOT"> <!-- Set type as ROOT -->
       <input type="submit" value="Signup">
       <div class="signup_link">
-        Already a member? <a href="login2.html">login</a>
+        Already a member? <a href="login.html">Login</a>
       </div>
     </form>
+    <p id="error-message"></p>
   </div>
 
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <p>Registration Successful!</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const email = document.querySelector('input[name="email"]').value;
+      const firstName = document.querySelector('input[name="first_name"]').value;
+      const lastName = document.querySelector('input[name="last_name"]').value;
+      const password = document.getElementById('password').value;
+      const type = document.querySelector('input[name="type"]').value; 
+      
+      // Make API request
+      fetch('http://52.198.61.81:3001/portal/no-auth/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: email,
+          first_name: firstName,
+          last_name: lastName,
+          password: password,
+          type: type 
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.token) {
+          localStorage.setItem('token', data.token);
+          
+          showPopup();
+          setTimeout(hidePopup, 2000);
+          setTimeout(function() {
+            window.location.href = 'dashboard.html';
+          }, 2000);
+        } else {
+          document.getElementById('error-message').innerText = 'Failed to register. Please try again.';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('error-message').innerText = 'An error occurred. Please try again later.';
+      });
+    });
+    
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.classList.add('fade-in');
+      popup.style.display = 'block';
+    }
+    
+    function hidePopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+  </script>
 </body>
 </html>
